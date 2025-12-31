@@ -415,7 +415,6 @@
             if(mediaItem.isDisplayed) return;
             const el = mediaItem.dom;
             if(mediaItem.type === 'video') { el.muted = true; el.loop = true; el.play().catch(e => {}); }
-            // 修改：将图片和视频大小改为原来的两倍（原100-250px，现200-500px）
             const size = Math.random() * 300 + 200;
             const leftPos = Math.random() * 80 + 10;
             const topPos = Math.random() * 80 + 10;
